@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        seleteres personalizados
+            # = id
+            . = class
+            : = pseudo-class
+            :: = peseudo-element
+            > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(0, 0, 99);
+        }
+
+        a:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: black;
+        }
+
+        a::before{
+            content: '♪ ';
+            color: rgb(187, 112, 1);
+        }
+        a::after{
+            content: ' ♪';
+            color: rgb(187, 112, 1);
+        }
+        .especial{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=eiOgwQ83Jzw&list=RDQMfjP9aevXu9Y&index=2" target="_blank" rel="external">Playlist lofi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=bQ1_iZc9F9k&list=PLCUzFvoPI-cRxsuoxciO7n0e5jJ7nKtja" target="_blank" rel="external" class="especial">Playlist Yoda</a></li>
+        <li><a href="https://www.youtube.com/watch?v=OPf0YbXqDm0&list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj" target="_blank" rel="external">Playlist Pop</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    /*
+    shorthand font: style weight size family
+    */
+}
+
+h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}
