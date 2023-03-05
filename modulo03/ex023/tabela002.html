@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelaas grandes</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
             border-collapse: collapse;
+            width: 500px;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -21,6 +26,9 @@
         }
         thead th{
             padding: 20px;
+            position: sticky;
+            top: -1px;
+            background-color: rgb(165, 165, 165);
         }
         tbody td{
             padding: 7px;
@@ -38,13 +46,15 @@
 
     </style>
 </head>
+
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População des Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -95,7 +105,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>249 825 638</strong></td>
             </tr>
         </tfoot>
