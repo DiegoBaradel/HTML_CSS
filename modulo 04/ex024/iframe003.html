@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe003</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            display: flex;
+            padding: 0;
+            margin: auto;
+            width: 500px;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        li{
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            align-items: center;
+            height: 50px;
+        }
+        ul a{
+            text-decoration: none;
+            background-color: white;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgb(35, 11, 58);
+            border: 2px solid rgb(35, 11, 58);
+            border-radius: 15px;
+            transition: 0.4s;
+        }
+        ul a:hover{
+            color: white;
+            background-color: rgb(35, 11, 58);
+            transform: scale(1.15);
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            width: 650px;
+            height: 700px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abrindo páginas no iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui facere impedit accusamus, ea ipsum molestiae id placeat modi, eveniet, nisi praesentium veritatis! Ea, non veritatis fugit tempore neque eos ab?</p>
+
+    <ul>
+        <li><a href="paginas_extras/pagina001.html" target="iframe">Primeira página</a></li>
+        <li><a href="paginas_extras/pagina002.html" target="iframe">Segunda página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nulla fugit voluptas enim itaque, iure fuga atque sequi error qui commodi sed. Voluptatum reiciendis quae reprehenderit ducimus doloremque nemo officiis!</p>
+
+    <iframe name="iframe" src="" frameborder="0"></iframe>
+</body>
+</html>
