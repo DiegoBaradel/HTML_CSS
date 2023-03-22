@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media (min-width:768px) {
+    span#amburguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu li{
+        display: inline-block;
+    }
+}
+
+@media (min-width:1000px) {
+    main{
+        width:900px;
+    }
+    
+}
